@@ -1,6 +1,8 @@
 # Tools Auto Cek UID LIVE & DEAD & GET COOKIES
 
 # Install Module & Apk Termux
+Apk Termux :
+https://f-droid.org/repo/com.termux_1022.apk
 
 # Module :
 
@@ -15,6 +17,8 @@ $ pkg install python -y
 $ pkg install git -y
 
 $ pip install requests bs4
+
+$ git clone https://github.com/SllowlyDev/apa
 
 $ python cek.py
 
