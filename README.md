@@ -10,19 +10,20 @@ $ termux-setup-storage ( enter )
 
 $ cd /sdcard ( enter )
 
-$ pkg update && upgrade -y
+$ rm -rf apa ( enter )
+$ pkg update && upgrade -y ( enter )
 
-$ pkg install python -y
+$ pkg install python -y ( enter )
 
-$ pkg install git -y
+$ pkg install git -y ( enter )
 
-$ pip install requests bs4
+$ pip install requests bs4 ( enter ) 
 
-$ git clone https://github.com/SllowlyDev/apa
+$ git clone https://github.com/SllowlyDev/apa ( enter )
 
-$ cd apa
+$ cd apa ( enter )
 
-$ python cek.py
+$ python cek.py ( enter )
 
 # Note : Kalo ada pop up / pilihyan y/n/t/o ketik y lalu enter.
 
