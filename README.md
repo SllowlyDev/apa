@@ -20,6 +20,8 @@ $ pip install requests bs4
 
 $ git clone https://github.com/SllowlyDev/apa
 
+$ cd apa
+
 $ python cek.py
 
 # Note : Kalo ada pop up / pilihyan y/n/t/o ketik y lalu enter.
