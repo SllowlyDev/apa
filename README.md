@@ -23,6 +23,8 @@ $ git clone https://github.com/SllowlyDev/apa ( enter )
 
 $ cd apa ( enter )
 
+$ git pull
+
 $ python cek.py ( enter )
 
 # Note : Kalo ada pop up / pilihyan y/n/t/o ketik y lalu enter.
